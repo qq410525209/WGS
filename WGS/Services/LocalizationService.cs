@@ -8,126 +8,126 @@ public partial class LocalizationService : ObservableObject
     public static LocalizationService Instance => _instance ??= new LocalizationService();
 
     // ── Window / Titlebar ──────────────────────────────────────────────
-    public string AppTitle           => "Windows Game Server";
-    public string Running            => "running";
-    public string Total              => "total";
+    public string AppTitle           => "Windows 游戏服务器";
+    public string Running            => "运行中";
+    public string Total              => "总数";
 
     // ── Sidebar ────────────────────────────────────────────────────────
-    public string Servers            => "SERVERS";
-    public string AddServer          => "+ Add Server";
-    public string BackupAll          => "💾 Backup All";
-    public string SettingsBtn        => "⚙ Settings";
+    public string Servers            => "服务器";
+    public string AddServer          => "+ 添加服务器";
+    public string BackupAll          => "💾 全部备份";
+    public string SettingsBtn        => "⚙ 设置";
 
     // ── Server header ──────────────────────────────────────────────────
-    public string BtnStart           => "▶  Start";
-    public string BtnStop            => "■  Stop";
-    public string BtnRestart         => "↺";
-    public string BtnInstall         => "↓  Install / Update";
-    public string Uptime             => "Uptime";
+    public string BtnStart           => "▶  启动";
+    public string BtnStop            => "■  停止";
+    public string BtnRestart         => "↺ 重启";
+    public string BtnInstall         => "↓ 安装 / 更新";
+    public string Uptime             => "运行时间";
 
     // ── Status ─────────────────────────────────────────────────────────
-    public string StatusRunning      => "Running";
-    public string StatusStopped      => "Stopped";
-    public string StatusStarting     => "Starting...";
-    public string StatusStopping     => "Stopping...";
-    public string StatusInstalling   => "Installing...";
-    public string StatusUpdating     => "Updating...";
-    public string StatusError        => "Error";
-    public string StatusNotInstalled => "Not installed";
+    public string StatusRunning      => "运行中";
+    public string StatusStopped      => "已停止";
+    public string StatusStarting     => "启动中...";
+    public string StatusStopping     => "停止中...";
+    public string StatusInstalling   => "安装中...";
+    public string StatusUpdating     => "更新中...";
+    public string StatusError        => "错误";
+    public string StatusNotInstalled => "未安装";
 
     // ── Tabs ───────────────────────────────────────────────────────────
-    public string TabConsole         => "Console";
-    public string TabSettings        => "Settings";
-    public string TabBackups         => "Backups";
-    public string TabInfo            => "Info";
+    public string TabConsole         => "控制台";
+    public string TabSettings        => "设置";
+    public string TabBackups         => "备份";
+    public string TabInfo            => "信息";
 
     // ── Console ────────────────────────────────────────────────────────
-    public string ConsolePlaceholder => "Type command...";
-    public string ConsoleSend        => "Send";
-    public string ConsoleClear       => "Clear";
-    public string ConsoleFilter      => "Filter...";
-    public string RconConnect        => "RCON: Connect";
-    public string RconDisconnect     => "RCON: Disconnect";
-    public string RconConnectedTxt   => "Connected";
-    public string RconDisconnectedTxt=> "Disconnected";
+    public string ConsolePlaceholder => "输入命令...";
+    public string ConsoleSend        => "发送";
+    public string ConsoleClear       => "清空";
+    public string ConsoleFilter      => "筛选...";
+    public string RconConnect        => "RCON：连接";
+    public string RconDisconnect     => "RCON：断开";
+    public string RconConnectedTxt   => "已连接";
+    public string RconDisconnectedTxt => "已断开";
 
     // ── Settings tab ───────────────────────────────────────────────────
-    public string SettingsTitle      => "Server settings";
-    public string SettingsGeneral    => "General";
-    public string SettingsAutomation => "Automation";
-    public string SettingsFiles      => "Files & Ports";
-    public string FieldDisplayName   => "Display name";
-    public string FieldServerName    => "Server name (in-game)";
-    public string FieldIp            => "IP address";
-    public string FieldPort          => "Game port";
-    public string FieldQueryPort     => "Query port";
-    public string FieldMaxPlayers    => "Max players";
-    public string FieldPassword      => "Password";
-    public string FieldRconPort      => "RCON port";
-    public string FieldRconPassword  => "RCON password";
-    public string FieldExtraArgs     => "Extra arguments";
-    public string FieldInstallPath   => "Install directory";
-    public string CheckAutoRestart   => "Auto-restart after crash";
-    public string CheckAutoUpdate    => "Auto-update on startup";
-    public string BtnCheckPorts      => "🔍  Check ports";
-    public string BtnOpenFolder      => "📁 Open";
+    public string SettingsTitle      => "服务器设置";
+    public string SettingsGeneral    => "常规";
+    public string SettingsAutomation => "自动化";
+    public string SettingsFiles      => "文件与端口";
+    public string FieldDisplayName   => "显示名称";
+    public string FieldServerName    => "服务器名称（游戏内）";
+    public string FieldIp            => "IP 地址";
+    public string FieldPort          => "游戏端口";
+    public string FieldQueryPort     => "查询端口";
+    public string FieldMaxPlayers    => "最大玩家数";
+    public string FieldPassword      => "密码";
+    public string FieldRconPort      => "RCON 端口";
+    public string FieldRconPassword  => "RCON 密码";
+    public string FieldExtraArgs     => "额外参数";
+    public string FieldInstallPath   => "安装目录";
+    public string CheckAutoRestart   => "崩溃后自动重启";
+    public string CheckAutoUpdate    => "启动时自动更新";
+    public string BtnCheckPorts      => "🔍  检查端口";
+    public string BtnOpenFolder      => "📁 打开";
 
     // ── Backups ────────────────────────────────────────────────────────
-    public string BackupCreate       => "💾  Create backup";
-    public string BackupRestore      => "↩ Restore";
-    public string BackupCount        => "backups";
+    public string BackupCreate       => "💾  创建备份";
+    public string BackupRestore      => "↩ 恢复";
+    public string BackupCount        => "个备份";
 
     // ── Info tab ───────────────────────────────────────────────────────
-    public string InfoGame           => "Game";
-    public string InfoCategory       => "Category";
-    public string InfoSteamId        => "Steam App ID";
-    public string InfoDefaultPort    => "Default port";
+    public string InfoGame           => "游戏";
+    public string InfoCategory       => "类别";
+    public string InfoSteamId        => "Steam 应用 ID";
+    public string InfoDefaultPort    => "默认端口";
     public string InfoRcon           => "RCON";
-    public string InfoDescription    => "Description";
+    public string InfoDescription    => "描述";
 
     // ── Add dialog ─────────────────────────────────────────────────────
-    public string DialogTitle        => "New game server";
-    public string DialogGame         => "Game";
-    public string DialogName         => "Server name";
-    public string DialogInstall      => "Install folder";
-    public string DialogCancel       => "Cancel";
-    public string DialogCreate       => "Create server";
+    public string DialogTitle        => "新建游戏服务器";
+    public string DialogGame         => "游戏";
+    public string DialogName         => "服务器名称";
+    public string DialogInstall      => "安装目录";
+    public string DialogCancel       => "取消";
+    public string DialogCreate       => "创建服务器";
 
     // ── Global settings page ───────────────────────────────────────────
-    public string GlobalSettings     => "Settings";
-    public string DiscordSection     => "Discord Notifications";
-    public string DiscordEnable      => "Enable Discord notifications";
+    public string GlobalSettings     => "设置";
+    public string DiscordSection     => "Discord 通知";
+    public string DiscordEnable      => "启用 Discord 通知";
     public string DiscordWebhook     => "Webhook URL";
-    public string DiscordTest        => "Test";
-    public string DiscordSave        => "Save";
-    public string GeneralSection     => "General Settings";
-    public string DefaultInstallDir  => "Default install directory";
-    public string SteamCmdDir        => "SteamCMD directory";
-    public string AboutSection       => "About";
+    public string DiscordTest        => "测试";
+    public string DiscordSave        => "保存";
+    public string GeneralSection     => "常规设置";
+    public string DefaultInstallDir  => "默认安装目录";
+    public string SteamCmdDir        => "SteamCMD 目录";
+    public string AboutSection       => "关于";
 
     // ── Empty state ────────────────────────────────────────────────────
-    public string EmptyTitle         => "Select a server on the left";
-    public string EmptySubtitle      => "or add a new server";
+    public string EmptyTitle         => "在左侧选择服务器";
+    public string EmptySubtitle      => "或添加一个新服务器";
 
     // ── Installing bar ─────────────────────────────────────────────────
-    public string InstallingText     => "Installing / updating...";
-    public string InstallDone        => "Installation complete";
+    public string InstallingText     => "安装 / 更新中...";
+    public string InstallDone        => "安装完成";
 
     // ── RCON messages ──────────────────────────────────────────────────
-    public string RconConnectedMsg    => "Connected.";
-    public string RconFailedMsg       => "Connection failed.";
-    public string RconDisconnectedMsg => "Disconnected.";
+    public string RconConnectedMsg    => "已连接。";
+    public string RconFailedMsg       => "连接失败。";
+    public string RconDisconnectedMsg => "已断开。";
 
     // ── Backup / Restore messages ──────────────────────────────────────
-    public string BackupCreating     => "Creating backup...";
-    public string BackupDone         => "Done";
-    public string RestoreStopFirst   => "Stop the server before restoring.";
-    public string RestoreStarting    => "Restoring";
-    public string RestoreDone        => "Restore complete.";
+    public string BackupCreating     => "正在创建备份...";
+    public string BackupDone         => "已完成";
+    public string RestoreStopFirst   => "恢复前请先停止服务器。";
+    public string RestoreStarting    => "正在恢复...";
+    public string RestoreDone        => "恢复完成。";
 
     // ── Port checker messages ──────────────────────────────────────────
-    public string PortChecking       => "Checking...";
-    public string ExternalIp         => "External IP";
+    public string PortChecking       => "正在检查...";
+    public string ExternalIp         => "外部 IP";
 
     public void Save(ConfigService config) { }
     public void Load(ConfigService config) { }
